@@ -1,0 +1,5 @@
+<% flash.each do |key, msg| %>
+  <% if msg.include? 'fatal' %>
+    <%= content_tag :div, msg, :id => key, :class => 'fatal' %>
+  <% end %>
+<% end %>
